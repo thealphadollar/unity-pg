@@ -1,0 +1,55 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7e3976da977cb49238499ea3b4c237ae, type: 3}
+  m_Name: ProfileDataSourceSettings
+  m_EditorClassIdentifier: 
+  profileGroupTypes:
+  - m_GroupTypePrefix: Built-In
+    m_Variables:
+    - m_Suffix: BuildPath
+      m_Value: '[UnityEngine.AddressableAssets.Addressables.BuildPath]/[BuildTarget]'
+    - m_Suffix: LoadPath
+      m_Value: '{UnityEngine.AddressableAssets.Addressables.RuntimePath}/[BuildTarget]'
+  - m_GroupTypePrefix: Editor Hosted
+    m_Variables:
+    - m_Suffix: BuildPath
+      m_Value: ServerData/[BuildTarget]
+    - m_Suffix: LoadPath
+      m_Value: http://[PrivateIpAddress]:[HostingServicePort]
+  - m_GroupTypePrefix: CCD.47db7128-65c9-4649-a41c-38ff80bf143c.a5d8cd22-a5a3-464b-bab8-1020c8239ed1.latest
+    m_Variables:
+    - m_Suffix: CcdBucketName
+      m_Value: Loady Dungeons Sample
+    - m_Suffix: CcdBucketId
+      m_Value: a5d8cd22-a5a3-464b-bab8-1020c8239ed1
+    - m_Suffix: CcdBadgeName
+      m_Value: latest
+    - m_Suffix: PromoteOnly
+      m_Value: False
+    - m_Suffix: BuildPath
+      m_Value: CCDBuildData/a5d8cd22-a5a3-464b-bab8-1020c8239ed1/latest
+    - m_Suffix: LoadPath
+      m_Value: https://47db7128-65c9-4649-a41c-38ff80bf143c.client-api.unity3dusercontent.com/client_api/v1/buckets/a5d8cd22-a5a3-464b-bab8-1020c8239ed1/release_by_badge/latest/entry_by_path/content/?path=
+  - m_GroupTypePrefix: CCD.47db7128-65c9-4649-a41c-38ff80bf143c.f2b41023-77fd-45f0-9f78-ffe17faa95a7.latest
+    m_Variables:
+    - m_Suffix: CcdBucketName
+      m_Value: Android
+    - m_Suffix: CcdBucketId
+      m_Value: f2b41023-77fd-45f0-9f78-ffe17faa95a7
+    - m_Suffix: CcdBadgeName
+      m_Value: latest
+    - m_Suffix: PromoteOnly
+      m_Value: True
+    - m_Suffix: BuildPath
+      m_Value: CCDBuildData/f2b41023-77fd-45f0-9f78-ffe17faa95a7/latest
+    - m_Suffix: LoadPath
+      m_Value: https://47db7128-65c9-4649-a41c-38ff80bf143c.client-api.unity3dusercontent.com/client_api/v1/buckets/f2b41023-77fd-45f0-9f78-ffe17faa95a7/release_by_badge/latest/entry_by_path/content/?path=
